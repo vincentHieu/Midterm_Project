@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="12dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginBottom="6dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            tools:text="iPhone 15 Pro Max"
+            xmlns:tools="http://schemas.android.com/tools"/>
+
+        <TextView
+            android:id="@+id/tvProductDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp"
+            android:textColor="#757575"
+            android:maxLines="2"
+            android:ellipsize="end"
+            tools:text="Mô tả sản phẩm"
+            xmlns:tools="http://schemas.android.com/tools"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvProductPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/purple_500"
+                tools:text="20.000.000 đ"
+                xmlns:tools="http://schemas.android.com/tools"/>
+
+            <Button
+                android:id="@+id/btnOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Đặt hàng"
+                android:textSize="13sp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

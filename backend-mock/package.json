@@ -1,0 +1,12 @@
+{
+  "name": "midterm-mock-api-gateway",
+  "version": "1.0.0",
+  "description": "Mock API Gateway and Microservices for Android App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
